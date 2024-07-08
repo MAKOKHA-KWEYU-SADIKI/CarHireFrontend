@@ -1,0 +1,23 @@
+
+.c{
+color:white;
+font-size: 2rem;
+padding:10px;
+margin: 16% 10px;
+}
+.whyUs{
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+padding:30px;
+div{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+   p{
+align-items: center;
+justify-content: center;
+margin-top: 10%;
+}
+}
+}
