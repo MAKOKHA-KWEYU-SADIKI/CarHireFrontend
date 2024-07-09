@@ -5,14 +5,14 @@ margin: 10px;
 padding: 10px;
 justify-content: space-between;
 a{
-width: 50%;
+// width: 50%;
 align-items: center;
 justify-content: center;
 margin-left: 40px;
 }
 p{
 margin-left: 0px;
-width: 50%;
+// width: 55%;
 font-size: 1.7rem;
 }
 }
@@ -20,7 +20,7 @@ font-size: 1.7rem;
 .abt{display: flex;
     flex-direction: row;
     font-size:1rem;
-    gap:2px;
+    gap:5px;
 h1{
 color: black;
 font-size: 2rem;

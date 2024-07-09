@@ -3,14 +3,16 @@ import Footer from '../components/footer'
 import Navbar from '../components/navbar'
 import './about.scss'
 import image1 from '../assets/handingover.jpeg'
+import Sidebar  from '../dashbord/user'
 
 const About = () => {
   return (
     <div>
       <Navbar/>
-      <div className='mainAbout'>
-        <div className='intro'>
-         <a href=""><img src={image1} alt="help" width="500" height="300" /></a>
+      <Sidebar/>
+      {/* <div className='mainAbout'>
+        <div className='intro'> */}
+         {/* <a href=""><img src={image1} alt="help" width="500" height="300" /></a>
           <p>
             Welcome to Abdirahman Easy drive, your trusted partner 
             in vehicle rental management. 
@@ -35,7 +37,7 @@ const About = () => {
             <p>
             We envision a world where vehicle rentals are hassle-free, 
             efficient, and accessible to everyone. Our advanced 
-            management system is<br></br> at the forefront of this transformation, 
+            management system is at the forefront of this transformation,<br></br> 
             setting new standards for the industry.
             </p>
           </div>
@@ -46,13 +48,13 @@ const About = () => {
             <li> Customer First: Our customers are at the heart of everything we do. 
               We strive to exceed their expectations with every interaction.</li>
            <li> Quality and Safety: We ensure our vehicles
-             are maintained to the highest standards of quality and safety.</li>
+             are maintained to the highest standards of quality and safety.</li> */}
            {/* <li> Innovation: We leverage cutting-edge technology to 
             continuously improve our services.</li>
            <li> Sustainability: We are committed to sustainable practices
              that protect our planet.
             </li> */}
-            </ul>
+            {/* </ul>
            
            
            
@@ -61,7 +63,7 @@ const About = () => {
         </div>
      
 
-      </div>
+      </div> */}
       <Footer/>
 
     </div>
