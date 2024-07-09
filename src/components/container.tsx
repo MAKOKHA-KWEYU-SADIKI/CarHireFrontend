@@ -2,9 +2,9 @@
 import image1 from '../assets/backround.webp'
 import image2 from '../assets/help.png'
 import image3 from '../assets/11338496.png'
-import image4 from '../assets/732200.png'
-import image5 from '../assets/3024605.png'
-import image6 from '../assets/2354127.png'
+// import image4 from '../assets/732200.png'
+// import image5 from '../assets/3024605.png'
+// import image6 from '../assets/2354127.png'
 import image7 from '../assets/cancell.jpg'
 import './container.scss'
 import React from 'react';
@@ -37,7 +37,9 @@ const Container: React.FC = () => {
              we are trust worthy
           </p>
        </div>
+       
      </div>
+     <button className="btn btn-active caret-yellow-600">get started</button>
     </div>
     
  

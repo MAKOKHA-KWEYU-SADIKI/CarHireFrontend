@@ -1,0 +1,34 @@
+.main{
+display:flex;
+flex-direction: row;
+gap:60px;
+justify-content: space-between;
+align-items: center;
+margin: 25px;
+}
+textarea{
+border: solid gray;
+border-radius: 4px;
+background-color: rgb(245, 247, 247);
+
+}
+.msg{
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+}
+.contact{
+width: 40%;
+label{
+font-size: 2rem;
+}
+}
+// button{
+// padding-top: 20px;
+// margin-top: 2%;
+// }
+.tec{
+    float:left;
+// margin-right: 10%;
+}
