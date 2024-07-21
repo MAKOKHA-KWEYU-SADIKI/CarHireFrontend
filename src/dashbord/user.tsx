@@ -1,32 +1,65 @@
 
-import image1 from '../assets/logout.jpg';
-import image2 from '../assets/settings.png';
-import './user.scss';
 
-const Sidebar = () => {
+// import Footer from '../components/footer';
+// import Navbar from '../components/navbar';
+// import { Outlet } from 'react-router-dom';
+// import './user.scss';
+// import Sidebar from '../components/sidebar'
+// import { useSelector } from 'react-redux';
+// // import Profile from '../dashbord/profile'
+// import UserTable from './usertable';
+// import { RootState } from '../app/store';
+// const User = ({children}:any) => {
+//   const user = useSelector((state: RootState) => state.user.user);
+//   return (
+//   <div>
+//   <div className='fix-top right-0 left-0'>
+//   <Navbar/>
+
+//   </div>
+//     <div className=''>
+//     <Sidebar/>
+
+//     </div>
+    
+    
+//     {children}
+//     <Footer/>
+//     <Outlet/>
+//    </div>
+//    );
+//  };
+
+//  export default User;
+import Footer from '../components/footer';
+import Navbar from '../components/navbar';
+import { Outlet } from 'react-router-dom';
+import Sidebar from '../components/sidebar';
+import { useSelector } from 'react-redux';
+import { RootState } from '../app/store';
+
+const User = ({ children }: any) => {
+  const user = useSelector((state: RootState) => state.user.user);
   return (
-    <div className="bg-gray-800 h-screen w-64 fixed left-0 top-0 overflow-y-auto">
-      <div className="flex items-center justify-center mt-8">
-        <span className="text-white text-2xl font-semibold">Sidebar</span>
+    <div className="flex flex-col h-screen">
+      <div className="fixed w-full z-50">
+        <Navbar />
       </div>
-      <nav className="mt-10">
-        <a href="#" className="block py-2 px-4 text-gray-200 hover:bg-gray-700">Dashboard</a>
-        <a href="#" className="block py-2 px-4 text-gray-200 hover:bg-gray-700">Book a vehicle</a>
-        <a href="#" className="block py-2 px-4 text-gray-200 hover:bg-gray-700">Booked Vehicles</a>
-        <a href="#" className="block py-2 px-4 text-gray-200 hover:bg-gray-700">My Ticket</a>
-        <a href="#" className="block py-2 px-4 text-gray-200 hover:bg-gray-700">New Ticket</a>
-        <a href="#" className="block py-2 px-4 text-gray-200 hover:bg-gray-700 flex items-center">
-          <img src={image2} alt="Settings" className="mr-2" width="20" height="20" />
-          Settings
-        </a>
-        <a href="#" className="block py-2 px-4 text-gray-200 hover:bg-gray-700 flex items-center">
-          <img src={image1} alt="Logout" className="mr-2" width="20" height="20" />
-          Logout
-        </a>
-      </nav>
+      <div className="flex flex-1 pt-16"> {/* Adjust padding-top based on Navbar height */}
+        <div className="fixed top-16 left-0 h-[calc(100%-4rem)] w-64 overflow-y-auto bg-gray-200 z-40"> {/* Adjust width and height */}
+          <Sidebar />
+        </div>
+        <div className="ml-64 w-full pt-4 pb-20 overflow-y-auto">
+          {children}
+          <Outlet />
+        </div>
+      </div >
+      <div className="fixed bottom-0 w-full z-50">
+   
+      </div>
+      
     </div>
   );
 };
 
-export default Sidebar;
-
+export default User;

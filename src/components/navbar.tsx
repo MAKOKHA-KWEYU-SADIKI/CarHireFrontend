@@ -11,14 +11,17 @@ const Navbar: React.FC = () => {
           <span className="text-white text-lg font-bold">Abdurahmans</span>
         </div>
         <div className="hidden md:flex space-x-4 ml-4">
-          <a href="#" className="text-gray-300 hover:text-white flex items-center">
+          <a href="http://localhost:5173" className="text-gray-300 hover:text-white flex items-center">
             <Home className="mr-1" /> Home
           </a>
-          <a href="#" className="text-gray-300 hover:text-white flex items-center">
+          <a href="http://localhost:5173/vehicles" className="text-gray-300 hover:text-white flex items-center">
             <Car className="mr-1" /> Vehicles
           </a>
           <a href="http://localhost:5173/about" className="text-gray-300 hover:text-white flex items-center">
-            <User className="mr-1" /> About Us
+            {/* <User className="mr-1" />  */}About Us
+          </a>
+          <a href="http://localhost:5173/contact" className="text-gray-300 hover:text-white flex items-center">
+            <User className="mr-1" /> Contact us
           </a>
         </div>
         <div className="hidden md:flex space-x-4 ml-auto">
