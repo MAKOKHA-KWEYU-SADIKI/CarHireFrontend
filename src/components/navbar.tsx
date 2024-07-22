@@ -28,8 +28,8 @@ const Navbar: React.FC = () => {
           </a>
         </div>
         <div className="hidden md:flex space-x-4 ml-auto">
-          <a href="https://vehiclehiremanagement-system.onrender.com/login" className="text-gray-300 hover:text-white">Login</a>
-          <a href="https://vehiclehiremanagement-system.onrender.com/register" className="text-gray-300 hover:text-white">Signup</a>
+          <a href="http://localhost:5173/login" className="text-gray-300 hover:text-white">Login</a>
+          <a href="http://localhost:5173/register" className="text-gray-300 hover:text-white">Signup</a>
         </div>
         <div className="md:hidden">
           <Menu className="text-white" />

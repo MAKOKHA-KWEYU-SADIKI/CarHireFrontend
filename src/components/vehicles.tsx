@@ -135,7 +135,7 @@ function Vehicle() {
                 <p className="text-gray-700 mb-1"><strong>Current Value:</strong> ${vehicle.current_value.toLocaleString()}</p>
                 <p className="text-gray-700"><strong>Maintenance Cost:</strong> ${vehicle.maintenance_cost.toLocaleString()}</p>
               </div>
-              <a href="https://vehiclehiremanagement-system.onrender.com/register"><button className="btn btn-primary mx-auto">Book Now</button></a>
+              <a href="http://localhost:5173/register"><button className="btn btn-primary mx-auto">Book Now</button></a>
               
             </div>
           ))}
