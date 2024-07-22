@@ -4,7 +4,7 @@ import { Toaster, toast } from 'sonner';
 
 const CustomerSupportTable: React.FC = () => {
   const { data: tickets, error, isLoading } = customerAPI.useGetcustomerQuery();
-//   console.log(tickets)
+
 
   if (isLoading) return <div>Loading...</div>;
   if (error) {

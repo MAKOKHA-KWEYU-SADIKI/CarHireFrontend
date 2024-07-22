@@ -6,7 +6,7 @@ export interface userstate{
 const initialState:userstate={
     value:0
 }
- const userslice=createSlice({
+createSlice({
     name:'user',
     initialState,
     reducers:{increament:(state)=>{

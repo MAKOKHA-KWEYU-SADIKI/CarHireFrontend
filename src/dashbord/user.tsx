@@ -31,7 +31,7 @@
 //  };
 
 //  export default User;
-import Footer from '../components/footer';
+
 import Navbar from '../components/navbar';
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../components/sidebar';
@@ -39,7 +39,7 @@ import { useSelector } from 'react-redux';
 import { RootState } from '../app/store';
 
 const User = ({ children }: any) => {
-  const user = useSelector((state: RootState) => state.user.user);
+  useSelector((state: RootState) => state.user.user);
   return (
     <div className="flex flex-col h-screen">
       <div className="fixed w-full z-50">

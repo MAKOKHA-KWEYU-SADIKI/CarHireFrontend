@@ -1,15 +1,4 @@
-// import React from 'react';
 
-
-// function Fleet() {
- 
-
-//   return (
-
-//   );
-// }
-
-// export default Fleet;
 import img4 from '../assets/bmw2.png'
 import img5 from '../assets/bmw3.png'
 import img6 from '../assets/gen3.png'

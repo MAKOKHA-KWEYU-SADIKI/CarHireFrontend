@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import { bookingAPI } from './bookingAPI';
 import {  toast } from 'sonner';
 import { TUbook } from './bookingAPI';
@@ -50,7 +50,7 @@ function EditBooking({ booking }: { booking: TUbook }) {
       <div className="mb-4">
         <label className="block text-sm font-medium text-gray-700">Total Amount</label>
         <input
-          type="number"
+          type="text"
           name="total_amount"
           value={formData.total_amount}
           onChange={handleChange}

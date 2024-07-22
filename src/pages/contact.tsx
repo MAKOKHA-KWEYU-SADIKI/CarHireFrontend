@@ -260,7 +260,7 @@
 // };
 
 // export default ContactUs;
-import React, { useState } from 'react';
+
 import image1 from '../assets/2354127.png';
 import image2 from '../assets/working hrs.png';
 import image4 from '../assets/location.png';
@@ -312,7 +312,7 @@ const ContactUs: React.FC = () => {
               id="message"
               className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
               placeholder="Enter your message..."
-              rows="4"
+              rows={4}
             ></textarea>
           </div>
           <div>

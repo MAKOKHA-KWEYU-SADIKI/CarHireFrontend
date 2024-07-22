@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { bookingAPI } from './bookingAPI';
-import { Toaster, toast } from 'sonner';
+import { Toaster} from 'sonner';
 import EditBooking from './editbookings';
 import { TUbook } from './bookingAPI';
 

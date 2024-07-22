@@ -1,10 +1,11 @@
 
 import image2 from '../assets/mercedes2.png';
-
+import Navbar from './navbar';
 import Footer from '../components/footer'
-const AboutUs = () => {
+const AboutUsNav = () => {
   return (
    <div>
+    <Navbar/>
      <div className="min-h-screen bg-blue-100 flex flex-col items-center justify-center p-8 space-y-8">
       <div className="flex flex-col lg:flex-row items-center justify-center lg:space-x-8">
         <div className="lg:w-1/2">
@@ -56,4 +57,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutUsNav;

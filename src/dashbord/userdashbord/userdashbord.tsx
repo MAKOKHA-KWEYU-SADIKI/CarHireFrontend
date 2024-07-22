@@ -1,6 +1,5 @@
 import Sidenav from './userSidebar'
 import Card from './userContainer'
-import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Footer from './footer'
 const Userdashbord = () => {

@@ -1,10 +1,5 @@
 
 import image1 from '../assets/backround.webp'
-
-// import image4 from '../assets/732200.png'
-// import image5 from '../assets/3024605.png'
-// import image6 from '../assets/2354127.png'
-
 import './container.scss'
 import React from 'react';
 const Container: React.FC = () => {

@@ -30,7 +30,11 @@ const Login = () => {
       localStorage.setItem('token',response.token)
       localStorage.setItem('userid',response.user.user_id)
       dispatch(setUser(response))
-      navigate('/user'); // Redirect to the dashboard after successful login
+      response.user.role === "admin" && navigate("/admin");
+      response.user.role === "user" && navigate("/user");
+      if(error){
+        console.log(error)
+      }
     } catch (err) {
       toast.error('Login failed. Please check your credentials.');
     }

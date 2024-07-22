@@ -1,10 +1,13 @@
 
 import { Home, Car, User, Menu } from 'lucide-react';
 import image1 from '../assets/logo.png';
-
+import AboutUsNav from './aboutusNavBar';
+import Footer from './footer';
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-blue-800 p-4">
+<div>
+  <AboutUsNav/>
+<nav className="bg-blue-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <img src={image1} alt="Logo" className="h-10 w-10 mr-2" />
@@ -33,6 +36,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
     </nav>
+</div>
   );
 }
 

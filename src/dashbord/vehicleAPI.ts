@@ -2,12 +2,13 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 
-interface specs {
+export interface specs {
     manufacture:string,
     model:string,
     engine_capacity:string,
     fuel_type:string,
     seating_capacity:string,
+    vehicle_id:number,
     year:string
 }
 
@@ -19,7 +20,7 @@ export interface TUvehicle{
     img_url:string;
     
 }
-// Define the API slice
+
 export const vehicleAPI = createApi({
     reducerPath: 'vehicleAPI',
     baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3000',
@@ -48,7 +49,7 @@ export const vehicleAPI = createApi({
         }),
         updateVehicle: builder.mutation<TUvehicle,Partial<TUvehicle>>({
             query: ({ vehicle_id, ...rest }) => ({
-                url: `user/${vehicle_id}`,
+                url: `specs/${vehicle_id}`,
                 method: 'PUT',
                 body: rest,
                 providesTags: ['updatevehicle'],
@@ -57,7 +58,7 @@ export const vehicleAPI = createApi({
         }),
         deleteVehicle: builder.mutation<{success: boolean; id:number}, number>({
             query: (id) => ({
-                url: `users/${id}`,
+                url: `vehicle/${id}`,
                 method: 'DELETE',
                 providesTags: ['deleteUser'],
             }),
@@ -66,5 +67,3 @@ export const vehicleAPI = createApi({
     }),
 });
 
-
-export const { useGetVehiclesQuery, useCreateVehicleMutation, useUpdateVehicleMutation, useDeleteVehicleMutation } = vehicleAPI;

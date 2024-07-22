@@ -31,7 +31,14 @@ export const fleetAPI = createApi({
         getfleet: builder.query<TUfleet[],void> ({ query: () => 'manage',
             providesTags: ['getfleet'],
          }),
-
+         createfleet: builder.mutation<TUfleet, Partial<TUfleet>>({
+            query: (rest) => ({
+              url: 'manage',
+              method: 'POST',
+              body: rest,
+            }),
+            invalidatesTags: ['getfleet'],
+          }),
 
         updatefleet: builder.mutation<TUfleet,Partial<TUfleet>>({
             query: ({ fleet_id, ...rest }) => ({

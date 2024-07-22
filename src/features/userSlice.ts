@@ -19,7 +19,7 @@ export interface User {
   }
   
 
-interface UserState {
+export interface UserState {
   user: User | null;
 }
 

@@ -50,5 +50,3 @@ export const profileAPI = createApi({
 });
 
 
-export const { useGetProfileQuery,  useUpdateProfileMutation, useDeleteProfileMutation } = profileAPI;
-

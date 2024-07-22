@@ -1,12 +1,11 @@
 
 import React from 'react';
-import { useGetVehiclesQuery } from './vehicleAPI';
 import { TUvehicle } from './vehicleAPI';
 import image1 from '../assets/bmw1.png';
 import { Toaster, toast } from 'sonner';
-
+import { vehicleAPI } from './vehicleAPI';
 const VehicleList: React.FC = () => {
-  const { data: vehicles, error, isLoading, isError } = useGetVehiclesQuery();
+  const { data: vehicles,isLoading, isError } = vehicleAPI.useGetVehiclesQuery();
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -32,7 +31,7 @@ const VehicleList: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {vehicles.map((vehicle: TUvehicle) => (
           <div key={vehicle.vehicle_id} className="p-6 border rounded-lg bg-gray-100 shadow-lg">
-            <img src={vehicle.img_url} alt={`${vehicle.vehicle.manufacture} ${vehicle.vehicle.model}`} className="w-full h-48 object-cover rounded-lg mb-4"/>
+            <img src={image1} alt={`${vehicle.vehicle.manufacture} ${vehicle.vehicle.model}`} className="w-full h-48 object-cover rounded-lg mb-4"/>
             <h2 className="text-xl font-bold mb-2">{vehicle.vehicle.manufacture} {vehicle.vehicle.model}</h2>
             <p className="text-gray-700"><strong>Engine Capacity:</strong> {vehicle.vehicle.engine_capacity}</p>
             <p className="text-gray-700"><strong>Fuel Type:</strong> {vehicle.vehicle.fuel_type}</p>

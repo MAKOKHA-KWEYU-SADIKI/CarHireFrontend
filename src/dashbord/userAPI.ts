@@ -5,24 +5,26 @@
 
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-interface TUser {
+export interface TUser {
     user_id: number;
     full_name: string;
-
+    role:string;
+    email:string;
+    adress:string;
     contact_phone: string;
 
 }
-interface TUvehicle{
-    vehicle_id:number,
-    vehicleSpecs_id:number,
-    availability:string,
-    manufacture:string,
-    model:string,
-    engine_capacity:string,
-    fuel_type:string,
-    seating_capacity:string,
-    year:string
-}
+// interface TUvehicle{
+//     vehicle_id:number,
+//     vehicleSpecs_id:number,
+//     availability:string,
+//     manufacture:string,
+//     model:string,
+//     engine_capacity:string,
+//     fuel_type:string,
+//     seating_capacity:string,
+//     year:string
+// }
 // Define the API slice
 export const usersAPI = createApi({
     reducerPath: 'usersAPI',

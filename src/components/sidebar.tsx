@@ -3,7 +3,7 @@ import { Link, Outlet } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { clearUser } from "../features/userSlice";
 import { Toaster, toast } from "sonner";
-
+// import logout from '../assets/logout.jpg'
 export default function Dashboard() {
   const dispatch = useDispatch();
 
@@ -35,12 +35,7 @@ export default function Dashboard() {
               >
                 Profile
               </Link>
-              <Link
-                to="/user/booking"
-                className="group flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:bg-indigo-600"
-              >
-                Booking
-              </Link>
+              
               <Link
                 to="/user/vehicles"
                 className="group flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:bg-indigo-600"
@@ -48,34 +43,16 @@ export default function Dashboard() {
                 Vehicles
               </Link>
               <Link
-                to="/user/table"
+                to="/user/vehicleTable"
                 className="group flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:bg-indigo-600"
               >
-                UsersTable
-              </Link>
-              <Link
-                to="/user/tickets"
-                className="group flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:bg-indigo-600"
-              >
-                Tickets
+                VehicleTable
               </Link>
               <Link
                 to="/user/about"
                 className="group flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:bg-indigo-600"
               >
                 About Us
-              </Link>
-              <Link
-                to="/user/fleet"
-                className="group flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:bg-indigo-600"
-              >
-                Add fleet
-              </Link>
-              <Link
-                to="/user/feedback"
-                className="group flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:bg-indigo-600"
-              >
-                Feedbackks
               </Link>
               <Link
                 to="/user/customer"
