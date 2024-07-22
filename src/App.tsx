@@ -43,7 +43,7 @@ function App() {
      { path: '/about', element: <About/>,
       errorElement:<Error/>,
      },
-     { path: '/contact', element: <Contact/>,
+     { path: 'https://vehiclehiremanagement-system.onrender.com/contact', element: <Contact/>,
       errorElement:<Error/>,
      },
      { path: '/userdashbord', element: <Userdashbord/>,
@@ -86,7 +86,7 @@ function App() {
       errorElement:<Error/>,
       children:[
       {
-        path: '/user/contact', element:<Contact/>,
+        path: 'https://vehiclehiremanagement-system.onrender.com/user/contact', element:<Contact/>,
       }, {
         path: '/user/', element:<Profile/>,
       },
