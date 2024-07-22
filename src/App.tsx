@@ -26,7 +26,7 @@ import AboutUsNav from './components/aboutusNavBar'
 function App() {
  
   const router = createBrowserRouter([
-    { path: 'https://car-hire-frontend-two.vercel.app/', element: <Home/>,
+    { path: 'https://car-hire-frontend-two.vercel.app', element: <Home/>,
       errorElement:<Error/>,
      },
      { path: '/aboutUS', element: <AboutUsNav/>,
