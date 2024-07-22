@@ -21,7 +21,7 @@ interface Profile {
 
 export const profileApi = createApi({
   reducerPath: 'profileApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'https://jsonplaceholder.typicode.com/' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'https://vehiclehiremanagement-system.onrender.com' }),
   endpoints: (builder) => ({
     getProfile: builder.query<Profile, void>({
       query: () => 'users/1', // Simulate fetching a single user

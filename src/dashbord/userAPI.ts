@@ -28,7 +28,7 @@ export interface TUser {
 // Define the API slice
 export const usersAPI = createApi({
     reducerPath: 'usersAPI',
-    baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3000' }),
+    baseQuery: fetchBaseQuery({ baseUrl: 'https://vehiclehiremanagement-system.onrender.com' }),
     'tagTypes':['getUser'],
     
     endpoints: (builder) => ({

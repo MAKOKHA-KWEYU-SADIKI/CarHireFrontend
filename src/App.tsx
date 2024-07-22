@@ -32,9 +32,7 @@ function App() {
      { path: '/aboutUS', element: <AboutUsNav/>,
       errorElement:<Error/>,
      },
-     { path: '/books', element: <BookingTable/>,
-      errorElement:<Error/>,
-     },
+     
     
      { path: '/vehicles', element: <Vehicle/>,
       errorElement:<Error/>,

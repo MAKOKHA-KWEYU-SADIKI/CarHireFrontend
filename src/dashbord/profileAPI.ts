@@ -12,7 +12,7 @@ export interface TUprofile{
 }
 export const profileAPI = createApi({
     reducerPath: 'profileAPI',
-    baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3000',
+    baseQuery: fetchBaseQuery({ baseUrl: 'https://vehiclehiremanagement-system.onrender.com',
        prepareHeaders:(headers)=>{
            const token = localStorage.getItem('token');
            if (token){

@@ -1,12 +1,12 @@
 
 import { Home, Car, User, Menu } from 'lucide-react';
 import image1 from '../assets/logo.png';
-import AboutUsNav from './aboutusNavBar';
-import Footer from './footer';
+// import AboutUsNav from './aboutusNavBar';
+// import Footer from './footer';
 const Navbar: React.FC = () => {
   return (
 <div>
-  <AboutUsNav/>
+  
 <nav className="bg-blue-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
           <a href="http://localhost:5173/vehicles" className="text-gray-300 hover:text-white flex items-center">
             <Car className="mr-1" /> Vehicles
           </a>
-          <a href="http://localhost:5173/about" className="text-gray-300 hover:text-white flex items-center">
+          <a href="http://localhost:5173/aboutUS" className="text-gray-300 hover:text-white flex items-center">
             {/* <User className="mr-1" />  */}About Us
           </a>
           <a href="http://localhost:5173/contact" className="text-gray-300 hover:text-white flex items-center">

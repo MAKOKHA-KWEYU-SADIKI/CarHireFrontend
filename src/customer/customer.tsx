@@ -69,7 +69,7 @@ const CustomerSupportForm: React.FC = () => {
           ></textarea>
         </div>
         <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700">Status</label>
+          <label className="block text-sm font-medium text-gray-700">Feedback</label>
           <input
             type="text"
             name="status"

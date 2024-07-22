@@ -23,7 +23,7 @@ export interface TUvehicle{
 
 export const vehicleAPI = createApi({
     reducerPath: 'vehicleAPI',
-    baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3000',
+    baseQuery: fetchBaseQuery({ baseUrl: 'https://vehiclehiremanagement-system.onrender.com',
        prepareHeaders:(headers)=>{
            const token = localStorage.getItem('token');
            if (token){

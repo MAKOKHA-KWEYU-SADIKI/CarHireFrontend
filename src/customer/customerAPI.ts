@@ -11,7 +11,7 @@ export interface TUcustomer {
 export const customerAPI = createApi({
   reducerPath: 'customeraApi',
   baseQuery: fetchBaseQuery({ 
-    baseUrl: 'http://localhost:3000',
+    baseUrl: 'https://vehiclehiremanagement-system.onrender.com',
     prepareHeaders: (headers) => {
       const token = localStorage.getItem('token');
       if (token) {

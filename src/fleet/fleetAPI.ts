@@ -14,7 +14,7 @@ export interface TUfleet{
 }
 export const fleetAPI = createApi({
     reducerPath: 'fleetAPI',
-    baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3000',
+    baseQuery: fetchBaseQuery({ baseUrl: 'https://vehiclehiremanagement-system.onrender.com',
        prepareHeaders:(headers)=>{
            const token = localStorage.getItem('token');
            console.log(token)

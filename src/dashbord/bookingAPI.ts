@@ -14,7 +14,7 @@ export interface TUbook {
 
 export const bookingAPI = createApi({
     reducerPath: 'bookingAPI',
-    baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3000',
+    baseQuery: fetchBaseQuery({ baseUrl: 'https://vehiclehiremanagement-system.onrender.com',
        prepareHeaders:(headers)=>{
            const token = localStorage.getItem('token');
            if (token){
