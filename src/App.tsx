@@ -43,7 +43,7 @@ function App() {
      { path: '/about', element: <About/>,
       errorElement:<Error/>,
      },
-     { path: 'https://vehiclehiremanagement-system.onrender.com/contact', element: <Contact/>,
+     { path: 'https://car-hire-frontend-two.vercel.app/', element: <Contact/>,
       errorElement:<Error/>,
      },
      { path: '/userdashbord', element: <Userdashbord/>,

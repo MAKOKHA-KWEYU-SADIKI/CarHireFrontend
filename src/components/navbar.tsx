@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
           <span className="text-white text-lg font-bold">Abdurahmans</span>
         </div>
         <div className="hidden md:flex space-x-4 ml-4">
-          <a href="http://localhost:5173" className="text-gray-300 hover:text-white flex items-center">
+          <a href="https://car-hire-frontend-two.vercel.app/" className="text-gray-300 hover:text-white flex items-center">
             <Home className="mr-1" /> Home
           </a>
           <a href="http://localhost:5173/vehicles" className="text-gray-300 hover:text-white flex items-center">
