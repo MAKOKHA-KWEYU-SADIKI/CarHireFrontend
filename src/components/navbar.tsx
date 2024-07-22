@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
           <a href="http://localhost:5173/aboutUS" className="text-gray-300 hover:text-white flex items-center">
             {/* <User className="mr-1" />  */}About Us
           </a>
-          <a href="https://vehiclehiremanagement-system.onrender.com/contact" className="text-gray-300 hover:text-white flex items-center">
+          <a href="https://car-hire-frontend-two.vercel.app/contact" className="text-gray-300 hover:text-white flex items-center">
             <User className="mr-1" /> Contact us
           </a>
         </div>
