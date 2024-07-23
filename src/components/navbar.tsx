@@ -14,22 +14,22 @@ const Navbar: React.FC = () => {
           <span className="text-white text-lg font-bold">Abdurahmans</span>
         </div>
         <div className="hidden md:flex space-x-4 ml-4">
-          <a href="https://car-hire-frontend-two.vercel.app/" className="text-gray-300 hover:text-white flex items-center">
+          <a href="" className="text-gray-300 hover:text-white flex items-center">
             <Home className="mr-1" /> Home
           </a>
-          <a href="http://localhost:5173/vehicles" className="text-gray-300 hover:text-white flex items-center">
+          <a href="/vehicles" className="text-gray-300 hover:text-white flex items-center">
             <Car className="mr-1" /> Vehicles
           </a>
-          <a href="http://localhost:5173/aboutUS" className="text-gray-300 hover:text-white flex items-center">
+          <a href="/aboutUS" className="text-gray-300 hover:text-white flex items-center">
             {/* <User className="mr-1" />  */}About Us
           </a>
-          <a href="https://car-hire-frontend-two.vercel.app/contact" className="text-gray-300 hover:text-white flex items-center">
+          <a href="/contact" className="text-gray-300 hover:text-white flex items-center">
             <User className="mr-1" /> Contact us
           </a>
         </div>
         <div className="hidden md:flex space-x-4 ml-auto">
-          <a href="http://localhost:5173/login" className="text-gray-300 hover:text-white">Login</a>
-          <a href="http://localhost:5173/register" className="text-gray-300 hover:text-white">Signup</a>
+          <a href="/login" className="text-gray-300 hover:text-white">Login</a>
+          <a href="/register" className="text-gray-300 hover:text-white">Signup</a>
         </div>
         <div className="md:hidden">
           <Menu className="text-white" />
