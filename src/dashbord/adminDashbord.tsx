@@ -49,6 +49,10 @@ const DashboardLayout: React.FC = () => {
             
           </li>
           <li>
+            <Link to="/admin/vehicleTable" className="block py-2 px-4 text-gray-600 hover:bg-gray-200 " >Vehicles</Link>
+            
+          </li>
+          <li>
             <Link to="/login" className="block py-2 px-4 text-gray-600 hover:bg-gray-200 " onClick={handleLogout}>Log out</Link>
             
           </li>

@@ -5,13 +5,12 @@ import Home from './pages/home'
 import Register from './pages/register'
 import  Contact  from './pages/contact'
 import Error from './pages/error'
-import User from './dashbord/user'
 import Vehicles from './components/vehicles'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Login  from './pages/login'
 import About from './components/about us'
 import UserTable from './dashbord/usertable'
-import { Profile } from './dashbord/profile'
+import  {Profile} from './dashbord/profile'
 import VehicleList from './dashbord/vehicledisplay'
 import BookingTable from './dashbord/booking'
 import Fleets from './fleet/add'
@@ -21,8 +20,8 @@ import CustomerSupportForm from './customer/customer'
 import CustomerSupportTable from './customer/feedbackTable'
 import DashboardLayout from './dashbord/adminDashbord'
 import AboutUsNav from './components/aboutusNavBar'
-
-
+import UserDashboardLayout from './dashbord/userDashboard'
+import UserVehicleTable from './dashbord/userVehicleDisplay'
 function App() {
  
   const router = createBrowserRouter([
@@ -69,10 +68,16 @@ function App() {
           path: '/admin/booking', element:<BookingTable/>,
         },
         {
+          path: '/admin/vehicleTable', element:<VehicleTable/>,
+        },
+        {
           path: '/admin/feedback', element:<CustomerSupportTable/>,
         },
         {
           path: '/admin/usertable', element:<UserTable/>,
+        },
+        {
+          path:'/admin/vehicles',element:<VehicleList/>
         },
         {
           path: '/admin/fleet', element:<Fleets/>,
@@ -82,20 +87,21 @@ function App() {
       ]
      },
      {
-      path: '/user', element:<User/>,
+      path: '/user', element:<UserDashboardLayout/>,
       errorElement:<Error/>,
       children:[
       {
         path: '/user/contact', element:<Contact/>,
-      }, {
-        path: '/user/', element:<Profile/>,
+      }, 
+      {
+        path: '/user', element:<Profile/>,
       },
      
       {
         path: '/user/vehicles', element:<VehicleList/>,
       },
       {
-        path: '/user/vehicleTable', element:<VehicleTable/>,
+        path: '/user/vehicleTable', element:<UserVehicleTable/>,
       },
      
       // {
