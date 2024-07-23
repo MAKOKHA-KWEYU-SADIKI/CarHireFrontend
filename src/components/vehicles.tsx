@@ -6,6 +6,7 @@ import img5 from '../assets/bmw3.png';
 import img6 from '../assets/gen3.png';
 import img7 from '../assets/gen1.png';
 import img8 from '../assets/mercedes1.png';
+import {Link }from "react-router-dom"
 import Navbar from './navbar';
 import Footer from './footer';
 function Vehicle() {
@@ -135,7 +136,13 @@ function Vehicle() {
                 <p className="text-gray-700 mb-1"><strong>Current Value:</strong> ${vehicle.current_value.toLocaleString()}</p>
                 <p className="text-gray-700"><strong>Maintenance Cost:</strong> ${vehicle.maintenance_cost.toLocaleString()}</p>
               </div>
-              <a href="http://localhost:5173/register"><button className="btn btn-primary mx-auto">Book Now</button></a>
+             
+              <button><Link
+                to="register"
+                className="group flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:bg-indigo-600"
+              >
+                Book
+              </Link></button>
               
             </div>
           ))}
