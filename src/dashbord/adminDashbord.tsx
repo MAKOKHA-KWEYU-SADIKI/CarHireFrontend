@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Link, Outlet,useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { clearUser } from "../features/userSlice";
 import { toast } from "sonner";
@@ -7,7 +7,7 @@ import Footer from './userdashbord/footer';
 import AdminNavbar from '../components/adminNavbar';
 const DashboardLayout: React.FC = () => {
     const dispatch = useDispatch();
-
+    const navigate=useNavigate()
     const handleLogout = () => {
       
       dispatch(clearUser());
@@ -17,7 +17,7 @@ const DashboardLayout: React.FC = () => {
       toast.success('Logged out successfully!');
   
       setTimeout(() => {
-        window.location.href = '/login';
+         navigate('/login');
       }, 2000); 
     };
     
