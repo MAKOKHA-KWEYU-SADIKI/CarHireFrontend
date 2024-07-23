@@ -30,7 +30,7 @@ export default function Dashboard() {
             <nav className="mt-5 flex-1 px-2 space-y-1">
               <p className="group flex items-center px-2 py-2 text-sm font-medium text-white rounded-md">Dashboard</p>
               <Link
-                to="/user/profile"
+                to="/user/"
                 className="group flex items-center px-2 py-2 text-sm font-medium text-white rounded-md hover:bg-indigo-600"
               >
                 Profile
