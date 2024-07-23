@@ -86,7 +86,7 @@ function App() {
       errorElement:<Error/>,
       children:[
       {
-        path: 'https://vehiclehiremanagement-system.onrender.com/user/contact', element:<Contact/>,
+        path: '/user/contact', element:<Contact/>,
       }, {
         path: '/user/', element:<Profile/>,
       },
