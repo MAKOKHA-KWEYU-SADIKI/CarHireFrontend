@@ -1,12 +1,12 @@
 
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet,useNavigate } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { clearUser } from "../features/userSlice";
 import { Toaster, toast } from "sonner";
 // import logout from '../assets/logout.jpg'
 export default function Dashboard() {
   const dispatch = useDispatch();
-
+  const navigate=useNavigate();
   const handleLogout = () => {
     
     dispatch(clearUser());
@@ -15,7 +15,7 @@ export default function Dashboard() {
     toast.success('Logged out successfully!');
 
     setTimeout(() => {
-      window.location.href = '/login';
+      navigate('/login');
     }, 2000); 
   };
 

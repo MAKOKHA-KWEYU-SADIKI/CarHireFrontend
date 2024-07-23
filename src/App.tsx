@@ -98,9 +98,9 @@ function App() {
         path: '/user/vehicleTable', element:<VehicleTable/>,
       },
      
-      {
-        path: '/user/profile', element:<Profile/>,
-      },
+      // {
+      //   path: '/user/profile', element:<Profile/>,
+      // },
    
       {
         path: '/user/register', element:<Register/>,
