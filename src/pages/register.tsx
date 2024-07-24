@@ -25,7 +25,7 @@ const Register = () => {
     try {
       const response = await axios.post('https://vehiclehiremanagement-system.onrender.com/register', formData);
       console.log('Registration successful:', response.data);
-      toast.success('User created successfully!', {
+      toast.success('Registration successful!', {
         style: {
           background: 'green',
           color: 'white',
